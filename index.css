@@ -12,8 +12,8 @@ body {
 }
 .header {
   width: 100%;
-  padding: 1vw;
-  font-size: 2.5vw;
+  padding: 1vh;
+  font-size: 2.5vh;
   color: white;
   background-color: var(--oc-gray-9);
 
@@ -32,22 +32,22 @@ body {
   align-items: center;
 }
 .logo {
-  height: 3vw;
+  height: 3vh;
   margin-right: 1vw;
   cursor: pointer;
 }
 .menus {
-  padding: 0.5vw 1vw;
+  padding: 0.5vh 1vh;
   cursor: pointer;
 }
 
 section {
-  margin-top: 6vw;
+  margin-top: 6vh;
 }
 
 .bg {
   width: 100%;
-  min-height: calc(100vh - 6vw);
+  min-height: calc(100vh - 6vh);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

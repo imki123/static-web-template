@@ -1,0 +1,82 @@
+@import 'node_modules/open-color/open-color.css';
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--oc-gray-9);
+}
+.header {
+  width: 100%;
+  padding: 1vw;
+  font-size: 3vw;
+  color: white;
+  background-color: var(--oc-gray-9);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  height: 4vw;
+  margin-right: 1vw;
+  cursor: pointer;
+}
+.menus {
+  padding: 0.5vw 1vw;
+  cursor: pointer;
+}
+
+.bg {
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+}
+.bg-title {
+  width: 100%;
+  padding: 5vw;
+  color: white;
+  font-size: 5vw;
+  text-shadow: black 0px 0px 5px;
+}
+.bg-content {
+  width: 100vw;
+  padding: 5vw;
+  color: white;
+  font-size: 3vw;
+  text-shadow: black 0px 0px 5px;
+}
+.top {
+  position: absolute;
+  top: 0;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+.left {
+  position: absolute;
+  left: 0;
+}
+.right {
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+.footer {
+  color: white;
+}

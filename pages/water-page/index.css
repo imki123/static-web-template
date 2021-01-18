@@ -1,4 +1,4 @@
-@import 'node_modules/open-color/open-color.css';
+@import '/node_modules/open-color/open-color.css';
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -36,8 +36,23 @@ body {
   margin-right: 1vw;
   cursor: pointer;
 }
-.menus {
+.gn {
   padding: 0.5vh 1vh;
+  cursor: pointer;
+}
+.lnb {
+  position: fixed;
+  right: 0;
+  top: 5.9vh;
+  z-index: 10;
+  background-color: rgba(33, 37, 41, 0.5);
+  color: white;
+  font-size: 2vh;
+  padding: 1vh 0;
+  /* backdrop-filter: blur(1vh); */
+}
+.ln {
+  padding: 1vh 2vh;
   cursor: pointer;
 }
 

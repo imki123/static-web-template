@@ -117,7 +117,18 @@ section {
 }
 
 @media (max-width: 500px) {
+  .bg-title {
+    font-size: 8vw;
+    padding-top: 12vh;
+  }
+  .bg-content {
+    font-size: 7vw;
+  }
+  .bg-content.bottom {
+    padding-bottom: 12vh;
+  }
   .footer {
     font-size: 3.5vw;
+    padding: 5vw;
   }
 }

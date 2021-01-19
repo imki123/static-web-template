@@ -74,14 +74,14 @@ section {
   padding: 5vw;
   color: white;
   font-size: 5vw;
-  text-shadow: black 0px 0px 5px;
+  text-shadow: black 0px 0px 7px;
 }
 .bg-content {
   width: 100vw;
   padding: 5vw;
   color: white;
   font-size: 3vw;
-  text-shadow: black 0px 0px 5px;
+  text-shadow: black 0px 0px 7px;
 }
 .top {
   position: absolute;
@@ -103,4 +103,6 @@ section {
 
 .footer {
   color: white;
+  padding: 5vh;
+  line-height: 3.2vh;
 }

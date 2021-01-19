@@ -1,6 +1,3 @@
-const { polyfill } = require('smoothscroll-polyfill/dist/smoothscroll.min')
-
-polyfill()
 document.addEventListener('DOMContentLoaded', function () {
   // header, footer 로드 후에
   const itv = setInterval(() => {
@@ -14,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // logo click scroll
       const logo = document.querySelector('.logo')
       logo.addEventListener('click', function () {
-        document.body.scrollTop = 0
+        scrollTo()
       })
 
       // global-navigator click
@@ -23,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         i.addEventListener('click', function () {
           if (idx === gns.length - 1) {
             // About scroll
-            document.body.scrollTop = footer.getClientRects()[0].y + document.body.scrollTop - header.clientHeight
+            scrollTo(footer.getClientRects()[0].y + document.body.scrollTop - header.clientHeight + 1)
           } else {
             location.href = '/' + i.innerHTML.toLowerCase() + '-page/'
           }
@@ -37,9 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
         i.addEventListener('click', function () {
           if (idx === 0) {
             // First ln scroll
-            document.body.scrollTop = 0
+            scrollTo(0)
           } else {
-            document.body.scrollTop = bgs[idx].getClientRects()[0].y + document.body.scrollTop - header.clientHeight
+            scrollTo(bgs[idx].getClientRects()[0].y + document.body.scrollTop - header.clientHeight + 1)
           }
         }),
       )

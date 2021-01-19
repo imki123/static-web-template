@@ -19,8 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
       gns.forEach((i, idx) => {
         i.addEventListener('click', function () {
           if (idx === gns.length - 1) {
-            // About scroll
+            // About 클릭시 아래로 scroll
             scrollTo(footer.getClientRects()[0].y + document.body.scrollTop - header.clientHeight + 1)
+            footer.style.color = 'var(--oc-indigo-9)'
+            setTimeout(() => {
+              footer.style = null
+            }, 500)
           } else {
             location.href = '../' + i.innerHTML.toLowerCase() + '-page/'
           }

@@ -6,6 +6,9 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+a {
+  color: var(--oc-indigo-9) !important;
+}
 .no-drag {
   -ms-user-select: none;
   -moz-user-select: -moz-none;
@@ -114,6 +117,7 @@ section {
   padding: 5vh;
   font-size: 2.2vh;
   line-height: 160%;
+  transition: all ease 1s;
 }
 
 @media (max-width: 500px) {

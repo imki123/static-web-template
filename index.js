@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // About scroll
             scrollTo(footer.getClientRects()[0].y + document.body.scrollTop - header.clientHeight + 1)
           } else {
-            location.href = '/' + i.innerHTML.toLowerCase() + '-page/'
+            location.href = '../' + i.innerHTML.toLowerCase() + '-page/'
           }
         })
       })

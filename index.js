@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // logo click scroll
       const logo = document.querySelector('.logo')
       logo.addEventListener('click', function () {
-        scrollTo()
+        scrollTo(0)
       })
 
       // global-navigator click

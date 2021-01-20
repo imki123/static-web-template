@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerC = document.querySelector('.header-content')
     const footer = document.querySelector('.footer')
     const footerC = document.querySelector('.footer-content')
+    // console.log(headerC, footerC)
     if (headerC && footerC) {
       clearInterval(itv)
 
@@ -21,10 +22,11 @@ document.addEventListener('DOMContentLoaded', function () {
           if (idx === gns.length - 1) {
             // About 클릭시 아래로 scroll
             scrollTo(footer.getClientRects()[0].y + document.body.scrollTop - header.clientHeight + 1)
+            // footer 글씨 색상 반짝
             footer.style.color = 'var(--oc-indigo-9)'
             setTimeout(() => {
               footer.style = null
-            }, 500)
+            }, 1000)
           } else {
             location.href = '../' + i.innerHTML.toLowerCase() + '-page/'
           }
@@ -45,5 +47,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }),
       )
     }
-  }, 100)
+  }, 200)
 })
